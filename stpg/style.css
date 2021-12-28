@@ -2,7 +2,7 @@
 <style>
    html {
             align-items: center;
-            color:#321146;
+            color:#fffeff;
             display: flex;
             height: 100%;
             justify-content: center;
@@ -14,11 +14,12 @@
                 margin: 1em;
                 padding: 1em;
                 height: 100%;
-                background-image: url(imgs/stairs.png);
+                background-image: url(imgs/background.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 font-family: 'Ubuntu Mono', monospace;
                 font-size: 18px, bold;
+                color: #fffeff
              }
 
              h1 {
@@ -26,8 +27,32 @@
                  grid-column: 1/-1;
                  margin: 5px;
                  text-align: left;
-                 color:#4C0F40;
+                 color:#96b7f5;
              }
+
+             h2 {
+              font-size: 2em;
+              grid-column: 1/-1;
+              margin: 5px;
+              text-align: left;
+              color:#75d9eb;
+             }
+
+              h3 {
+                font-size: 2em;
+                grid-column: 1/-1;
+                margin: 5px;
+                text-align: left;
+                color:#8d60f7;
+              }
+
+              h4 {
+                font-size: 2em;
+                grid-column: 1/-1;
+                margin: 5px;
+                text-align: left;
+                color:#c8ebf0;
+              }
 
              a {
                  color: inherit;
@@ -39,24 +64,28 @@
                  color:#9F77B7;
              }
 
-            /* img {
-               padding: 0;
-               margin: 0;
-               position: absolute;
-               image: url(imgs/box.png)
-               height: auto;
-               */
-
-
+              img {
+                border: 2px solid #313131;
+                /*TODO FIX IMAGE POSITION*/
+                margin: 100px 10px 1%;
+                height: 402px;
+                object-fit: cover;
+                object-position: 45% 100%;
+                width: 370px;
+                position: relative;
                 
+                
+              }
+              
                nav {
                  display: grid;
                  grid-template-columns: 1fr 1fr;
-                 margin: 0 1em;
+                 /*TODO FIX MARGIN AND PADDING*/
+                 margin: 100px 10px 170px;
                  min-width: 35%;
-                 padding: 1em 0;
+                 padding: 5em 5em;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
-                filter: blur(0.25px);
+                background-color: rgba(110, 86, 104, 0.769)
                }
              
 
@@ -73,8 +102,8 @@
              }
 
              form {
-                padding: 10% 1em ;
-                margin: 5% 1em;
+                padding: 2% 0.5em ;
+                margin: 1% 0.5em;
                 position: absolute;
 
               }
@@ -85,17 +114,18 @@
                 box-sizing: border-box;
                 font: inherit;
                 width: 100%;
-                border:0.2em solid #dddd;
-                border-radius: 0.5em .5em;
+                border:0.2em solid #c3b0f8;
+                border-radius: .5em .5em;
               }
               
               form label {
-                color: #d3e6f0;
-                left: -0.5em;
+                color: #c3b0f8;
+                left: -5px;
                 position: absolute;
               }
               
               form:focus-within input::placeholder {
                 opacity: 0;
               }
+            
               </style>
